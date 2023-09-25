@@ -21,6 +21,7 @@ public class Console {
 
         System.out.printf("%s %s tem %d anos.", nome, sobrenome, idade);
 
+        
         entrada.close();
     }
 }
