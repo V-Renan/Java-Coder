@@ -1,11 +1,11 @@
-package fundamentos;
+package fundamentos.operadores;
 
 /**
  * @author Victor$
  * @date 9/25/2023$
  * Description:
  */
-public class desafioAritimeticos {
+public class DesafioAritimeticos {
 
     public static void main(String[] args) {
 
