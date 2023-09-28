@@ -8,8 +8,6 @@ import java.util.Scanner;
  */
 public class Data {
 
-
-
     int dia;
 
     String mes;

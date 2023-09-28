@@ -12,9 +12,12 @@ import java.util.Scanner;
 public class Produto {
 
     String nome;
-
     Double preco;
-
     Double desconto;
 
+    public Double precoComDesconto() {
+        return preco * (1 - desconto);
+    }public Double precoComDesconto(double descontoDoGerente) {
+        return preco * (1 - desconto + descontoDoGerente);
+    }
 }
