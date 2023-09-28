@@ -14,7 +14,8 @@ public class DataTeste {
         Scanner scan = new Scanner(System.in);
 
         Data data = new Data(7, "Setembro", 1999);
-        Data data1 = new Data(01, "Fevereiro", 2000);
+        Data data1 = new Data();
+        data1.mes = "Fevereiro";
 
         System.out.println(data.imprimirData());
         System.out.println(data1.imprimirData());
@@ -33,6 +34,10 @@ public class DataTeste {
         pessoa.setCelular(scan.nextLong());
 
         System.out.println(pessoa.imprimirPessoas());
+
+        System.out.println("----------------------");
+
+        System.out.println(Data.teste);
 
         scan.close();
     }

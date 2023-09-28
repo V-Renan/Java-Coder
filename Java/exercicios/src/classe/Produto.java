@@ -1,9 +1,6 @@
 package classe;
 
 
-import java.util.Locale;
-import java.util.Scanner;
-
 /**
  * @author Victor$
  * @date 9/28/2023$
@@ -13,11 +10,23 @@ public class Produto {
 
     String nome;
     Double preco;
-    Double desconto;
+    static Double desconto = 0.25;
+
+    Produto() {
+
+    }
+
+    Produto(String nomeInicial, Double precoInicial, Double desconto) {
+        nome = nomeInicial;
+        preco = precoInicial;
+        desconto = Produto.desconto;
+    }
 
     public Double precoComDesconto() {
         return preco * (1 - desconto);
-    }public Double precoComDesconto(double descontoDoGerente) {
+    }
+    public Double precoComDesconto(double descontoDoGerente) {
         return preco * (1 - desconto + descontoDoGerente);
     }
+
 }

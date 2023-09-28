@@ -14,6 +14,13 @@ public class Data {
 
     int ano;
 
+    static String teste = "imprimindo teste!";
+
+    public Data(){
+        dia = 1;
+        mes = "Janeiro";
+        ano = 1970;
+    }
 
     public Data(int dia, String mes, int ano) {
         this.dia = dia;
