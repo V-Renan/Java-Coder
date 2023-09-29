@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @date 9/28/2023$
  * Description:
  */
-public class DataTeste {
+public class Demo {
 
     public static void main(String[] args) {
 
