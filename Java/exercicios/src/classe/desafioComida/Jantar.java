@@ -15,7 +15,7 @@ public class Jantar {
         Comida c2 = new Comida("Arroz", 0.300);
 
         System.out.println(p1.apresentar());
-        
+
         p1.comer(c1);
         System.out.println(p1.apresentar());
 
