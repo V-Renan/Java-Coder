@@ -9,17 +9,16 @@ public class ProdutoTeste {
 
     public static void main(String[] args) {
 
-        Produto p1 = new Produto("Notebook", 100.00,Produto.desconto);
+        Produto p1 = new Produto("Notebook", 4356.86);
 
         var p2 = new Produto();
         p2.nome = "Caneta Preta";
-        p2.preco = 100.00;
-        //p2.desconto = Produto.desconto;
+        p2.preco = 12.56;
 
+        Produto.desconto = 0.50;
 
-
-        System.out.println(p1.nome);
-        System.out.println(p2.nome);
+        System.out.println(p1.nome + " " + p1.precoComDesconto());
+        System.out.println(p2.nome + " " + p2.precoComDesconto());
 
         double precofinal1 = p1.precoComDesconto();
         double precofinal2 = p2.precoComDesconto(0.1);
@@ -27,7 +26,5 @@ public class ProdutoTeste {
 
         System.out.printf("Média carrinho: R$%.2f.", mediaCarrinho);
         System.out.println();
-        System.out.println(p1.precoComDesconto());
-        System.out.println(p2.precoComDesconto());
     }
 }
