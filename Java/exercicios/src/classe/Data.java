@@ -8,6 +8,7 @@ import java.util.Scanner;
  */
 public class Data {
 
+    Pessoas pessoa = new Pessoas();
     int dia;
 
     String mes;
@@ -17,9 +18,10 @@ public class Data {
     static String teste = "imprimindo teste!";
 
     public Data(){
-        dia = 1;
-        mes = "Janeiro";
-        ano = 1970;
+//        dia = 1;
+//        mes = "Janeiro";
+//        ano = 1970;
+        this(1, "janeiro", 1970);
     }
 
     public Data(int dia, String mes, int ano) {
