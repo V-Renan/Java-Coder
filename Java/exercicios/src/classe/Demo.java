@@ -39,6 +39,9 @@ public class Demo {
 
         System.out.println(Data.teste);
 
+        System.out.println("--------------------------------");
+        System.out.println(data.imprimirData());
+
         scan.close();
     }
 
