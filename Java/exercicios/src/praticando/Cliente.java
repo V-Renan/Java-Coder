@@ -1,7 +1,6 @@
 package praticando;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 /**
@@ -19,21 +18,33 @@ public class Cliente {
 
     private String endereco;
 
-    private Integer celular;
 
-    public Cliente(String nome, String sobrenome, String id, String endereco, String celular) {
+    public Cliente(String nome, String sobrenome, String id, String endereco) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.id = id;
         this.endereco = endereco;
-        this.celular = Integer.valueOf(celular.trim());
     }
 
     public Cliente() {
-        this("", "", "", "", String.valueOf(0));
+        this("", "", "", "");
     }
 
-    List<Jogos> jogo = new ArrayList<>();
+    ArrayList<Compras> compra = new ArrayList<>();
+
+    void adicionarCompra(Compras compra) {
+       this.compra.add(compra);
+    }
+
+    double obterValorTotal() {
+        double total = 0;
+
+        for (Compras compra : compra) {
+            total += compra.obterValorParcial();
+        }
+
+        return total;
+    }
 
     public String getNome() {
         return nome;
@@ -67,14 +78,6 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public Integer getCelular() {
-        return celular;
-    }
-
-    public void setCelular(Integer celular) {
-        this.celular = celular;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -89,6 +92,7 @@ public class Cliente {
     }
 
     public String toString() {
-        return "ID:" + id + "\n Nome: " + nome + " Sobrenome: " + sobrenome;
+        return "ID: " + id + "\nNome: " + nome + " Sobrenome: " + sobrenome +
+                "\nEndereço: " + endereco;
     }
 }

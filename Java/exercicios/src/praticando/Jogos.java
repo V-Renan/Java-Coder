@@ -1,5 +1,8 @@
 package praticando;
 
+import revisandoOO.desafio.Compra;
+
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -16,6 +19,8 @@ public class Jogos {
     private String id;
 
     private Double preco;
+
+    private int quantidade;
 
 
     public Jogos(String nome, String genero, String id, Double preco) {
@@ -60,6 +65,14 @@ public class Jogos {
         this.preco = preco;
     }
 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -74,6 +87,6 @@ public class Jogos {
     }
 
     public String toString() {
-        return "ID: " + id + " Nome: " + nome + " Gênero: " + genero;
+        return "ID: " + id + "\nNome: " + nome + "\nGênero: " + genero + "\nPreço: " + preco + "\n";
     }
 }

@@ -9,22 +9,29 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        Jogos jogo1 = new Jogos();
-        jogo1.setNome("God of War");
-        jogo1.setGenero("Ação-Aventura");
-        jogo1.setId("1");
-        jogo1.setPreco(300.00);
+        Compras jogo1 = new Compras();
+        Compras jogo2 = new Compras();
+        Compras jogo3 = new Compras();
 
-        Cliente cliente1 = new Cliente();
-        cliente1.setId("1");
-        cliente1.setNome("Victor");
-        cliente1.setSobrenome("Moura");
-        cliente1.setEndereco("End123");
-        cliente1.setCelular(123645);
+        jogo1.adicionarJogo("God of War", "Ação-Aventura", "1", 300.00);
+        jogo2.adicionarJogo("The whitcher 3", "RPG", "2", 250.00);
+        jogo3.adicionarJogo("Spider-Man", "Ação-Aventura", "3", 280.00);
 
-        System.out.println(jogo1.toString());
-        System.out.println(cliente1.toString());
+        Cliente cliente1 = new Cliente("Victor", "Renan","1", "End-123");
 
+        for (Jogos j : jogo1.jogo) {
+            System.out.println(j);
+        }
+
+        for (Jogos j : jogo2.jogo) {
+            System.out.println(j);
+        }
+
+
+        cliente1.adicionarCompra(jogo1);
+        cliente1.adicionarCompra(jogo2);
+        cliente1.adicionarCompra(jogo3);
+        System.out.println("Total: R$" + cliente1.obterValorTotal());
 
     }
 }
