@@ -36,5 +36,8 @@ public class Demo {
         golf.frear();
         golf.frear();
         System.out.println("Golf --> " + golf.toString());
+
+        System.out.println(ferrari.VELOCIDADE_MAXIMA);
+        System.out.println(golf.VELOCIDADE_MAXIMA);
     }
 }
