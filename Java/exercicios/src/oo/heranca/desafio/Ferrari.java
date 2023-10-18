@@ -17,8 +17,8 @@ public class Ferrari extends Carro{
         delta = 15;
     }
 
-//    @Override
-//    void acelerar() {
-//        super.acelerar();
-//    }
+//   @Override
+//   public void acelerar() {
+//       super.acelerar();
+//   }
 }

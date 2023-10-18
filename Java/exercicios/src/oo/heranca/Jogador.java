@@ -11,7 +11,7 @@ public class Jogador {
     public int x;
     public int y;
 
-    Jogador(int x, int y) {
+    protected Jogador(int x, int y) {
         this.x = x;
         this.y = y;
     }

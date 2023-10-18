@@ -9,13 +9,13 @@ public class Carro {
 
     public final int VELOCIDADE_MAXIMA;
 
-    public int delta = 5;
+    protected int delta = 5;
 
-    public Carro(int velocidadeMaxima) {
+    protected Carro(int velocidadeMaxima) {
         VELOCIDADE_MAXIMA = velocidadeMaxima;
     }
 
-    public int velocidadeAtual = 20;
+    protected int velocidadeAtual;
 
 
     public void acelerar() {

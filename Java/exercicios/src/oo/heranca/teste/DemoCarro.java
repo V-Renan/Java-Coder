@@ -41,6 +41,11 @@ public class DemoCarro {
         golf.frear();
         System.out.println("Golf --> " + golf.toString());
 
+        ferrari.acelerar();
+        golf.acelerar();
+        System.out.println(golf.toString());
+        System.out.println(ferrari.toString());
+
         System.out.println(ferrari.VELOCIDADE_MAXIMA);
         System.out.println(golf.VELOCIDADE_MAXIMA);
     }
