@@ -7,7 +7,7 @@ package oo.heranca.desafio;
  */
 public class Golf extends Carro{
 
-    Golf() {
+    public Golf() {
         super(250);
     }
 

@@ -1,11 +1,15 @@
-package oo.heranca.desafio;
+package oo.heranca.teste;
+
+import oo.heranca.desafio.Carro;
+import oo.heranca.desafio.Ferrari;
+import oo.heranca.desafio.Golf;
 
 /**
  * @author Victor$
  * @date 10/17/2023$
  * Description:
  */
-public class Demo {
+public class DemoCarro {
 
     public static void main(String[] args) {
 

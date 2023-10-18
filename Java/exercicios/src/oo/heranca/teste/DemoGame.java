@@ -1,11 +1,15 @@
-package oo.heranca;
+package oo.heranca.teste;
+
+import oo.heranca.Direcao;
+import oo.heranca.Heroi;
+import oo.heranca.Monstro;
 
 /**
  * @author Victor$
  * @date 10/17/2023$
  * Description:
  */
-public class Demo {
+public class DemoGame {
 
     public static void main(String[] args) {
 
