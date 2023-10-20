@@ -1,6 +1,6 @@
-package oo;
+package oo.polimorfismo;
 
-import oo.heranca.teste.Comida;
+import oo.polimorfismo.Comida;
 
 /**
  * @author Victor$

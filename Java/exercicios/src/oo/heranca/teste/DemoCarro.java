@@ -13,7 +13,7 @@ public class DemoCarro {
 
     public static void main(String[] args) {
 
-        Carro ferrari = new Ferrari();
+        Ferrari ferrari = new Ferrari();
         Carro golf = new Golf();
 
         System.out.println("Ferrari -- > " + ferrari.toString());
@@ -48,5 +48,16 @@ public class DemoCarro {
 
         System.out.println(ferrari.VELOCIDADE_MAXIMA);
         System.out.println(golf.VELOCIDADE_MAXIMA);
+
+        System.out.println("---------");
+
+        golf.acelerar();
+        ferrari.ligarTurbo();
+        ferrari.acelerar();
+        ferrari.ligarAr();
+        ferrari.desligarTurbo();
+        System.out.println(ferrari.velocidadeDoAr());
+        System.out.println("Ferrari: " + ferrari.toString());
+        System.out.println("Golf: " + golf.toString());
     }
 }

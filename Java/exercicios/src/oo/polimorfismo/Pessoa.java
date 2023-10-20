@@ -1,16 +1,22 @@
-package oo.heranca.teste;
+package oo.polimorfismo;
+
+import oo.polimorfismo.Comida;
 
 /**
  * @author Victor$
  * @date 10/18/2023$
  * Description:
  */
-public class Comida {
+public class Pessoa {
 
     private double peso;
 
-    public Comida(double peso) {
+    public Pessoa(double peso) {
         setPeso(peso);
+    }
+
+    public void comer(Comida comida) {
+        this.peso += comida.getPeso();
     }
 
     public double getPeso() {
