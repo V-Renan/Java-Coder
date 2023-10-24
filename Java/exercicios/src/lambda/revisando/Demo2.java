@@ -24,5 +24,7 @@ public class Demo2 {
         };
         System.out.println(calc.executar(24, 2));
 
+        System.out.println(calc.legal());
+        System.out.println(Calculo.muitoLegal());
     }
 }

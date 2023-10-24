@@ -10,4 +10,8 @@ public class Dividir implements Calculo{
     public double executar(double a, double b) {
         return a / b;
     }
+
+    static void meuImprirmir2(String nome) {
+        System.out.println("Olá! Meu nome é " + nome);
+    }
 }
