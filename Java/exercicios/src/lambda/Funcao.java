@@ -1,6 +1,7 @@
 package lambda;
 
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 /**
  * @author Victor$
@@ -36,6 +37,5 @@ public class Funcao {
                 .apply(33);
 
         System.out.println(resultadofinal2);
-
     }
 }
