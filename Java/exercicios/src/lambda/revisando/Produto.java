@@ -7,9 +7,36 @@ package lambda.revisando;
  */
 public class Produto {
 
-    final String nome;
-    final double preco;
-    final double desconto;
+    private String nome;
+    private double preco;
+    private double desconto;
+
+    public Produto() {
+
+    }
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public double getDesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(double desconto) {
+        this.desconto = desconto;
+    }
 
     public Produto(String nome, double preco, double desconto) {
         this.nome = nome;
@@ -18,7 +45,7 @@ public class Produto {
     }
 
     public String toString() {
-        double precoFinal = preco * (1 - desconto);
-        return "Produto: " + nome + " | " + "Preco: R$" + preco + " | " + "Preco final com desconto: R$" + precoFinal;
+        double desconto = getPreco() * (1- getDesconto());
+        return "Produto: " + nome + " | " + "Preco: R$" + preco + " | " + "Desconto: R$" + desconto;
     }
 }

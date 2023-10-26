@@ -26,7 +26,7 @@ public class Desafio {
          */
 
         Function<Produto, Double> precoFinal =
-                produto -> produto.preco * (1 - p.desconto);
+                produto -> produto.getPreco() * (1 - p.getDesconto());
         UnaryOperator<Double> impostoMunicipal =
                 preco -> preco >= 2500 ? preco + (preco * 8.5 / 100) : preco;
         UnaryOperator<Double> frete =
