@@ -1,5 +1,8 @@
 package lambda.revisando;
 
+import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
+
 /**
  * @author Victor$
  * @date 10/23/2023$

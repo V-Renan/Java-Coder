@@ -24,5 +24,8 @@ public class Demo3 {
 
         calc = (x, y) -> x / y;
         System.out.println(calc.apply(30.00, 15.00));
+
+        BinaryOperator<Integer> teste = (x, y) -> x + y;
+        System.out.println(teste.apply(1, 6));
     }
 }
