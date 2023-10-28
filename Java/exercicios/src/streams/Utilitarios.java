@@ -31,6 +31,8 @@ public interface Utilitarios {
         }
         return inverter.toString();
     }
+    public static UnaryOperator<String> inverter2 =
+            texto -> new StringBuilder(texto).reverse().toString();
     public static Function<String, Integer> inteiro =
             n -> Integer.parseInt(n, 2);
 }

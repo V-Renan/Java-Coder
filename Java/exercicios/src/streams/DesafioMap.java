@@ -18,7 +18,7 @@ public class DesafioMap {
     public static void main(String[] args) {
 
         List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
-        
+
         /*
          * 1. Número para String binária... 6 => "110"
          * 2. Reverter a String... "110" => "011"
@@ -27,7 +27,7 @@ public class DesafioMap {
 
         nums.stream()
                 .map(Utilitarios.binario)
-                .map(Utilitarios::inverter)
+                .map(Utilitarios.inverter2)
                 .map(Utilitarios.inteiro)
                 .forEach(System.out::println);
     }
