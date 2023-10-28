@@ -1,4 +1,4 @@
-package streams.desafio;
+package streams.desafio1;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,7 +25,5 @@ public class Demo {
                 .filter(Utilitarios.precoFinal)
                 .map(Utilitarios.promocao)
                 .forEach(System.out::println);
-
-
     }
 }
