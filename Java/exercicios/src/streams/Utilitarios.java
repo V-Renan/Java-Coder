@@ -23,7 +23,7 @@ public interface Utilitarios {
         return n + "!!!! ";
     }
     public static Function<Integer, String> binario =
-            n -> Integer.toBinaryString(n);
+            Integer::toBinaryString;
     public static String inverter(String x) {
         StringBuilder inverter = new StringBuilder();
         for (int i = x.length() - 1; i >= 0; i--) {
