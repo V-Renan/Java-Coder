@@ -46,6 +46,6 @@ public class Produto {
 
     public String toString() {
         double desconto = getPreco() * (1- getDesconto());
-        return "Produto: " + nome + " | " + "Preco: R$" + preco + " | " + "Desconto: R$" + desconto;
+        return "Produto: " + nome + " | " + "Preco: R$" + preco + " | " + "Desconto: R$" + Double.parseDouble(String.format("%.2f", desconto));
     }
 }

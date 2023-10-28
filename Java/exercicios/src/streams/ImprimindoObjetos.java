@@ -1,5 +1,6 @@
 package streams;
 
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -40,5 +41,6 @@ public class ImprimindoObjetos {
         System.out.println("\nUsando Stream...");
         Stream<String> str = aprovados.stream();
         str.forEach(System.out::println); // Laço interno!!
+
     }
 }
