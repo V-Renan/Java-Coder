@@ -1,7 +1,8 @@
 package streams.desafio1;
 
-import java.util.function.Function;
-import java.util.function.Predicate;
+;
+
+import java.util.function.*;
 
 /**
  * @author Victor$
@@ -21,4 +22,10 @@ public final class Utilitarios {
 
     public static Function<Produto, String> promocao =
             produto -> "\nAproveite a promoção deste produto com frete grátis e com mais de 30% de desconto!\n" + produto.toString();
+
+    public Double obterValorTotal(Produto p) {
+        double precoParcial = p.getPreco() * (1- p.getDesconto());
+        double total = precoParcial + p.getFrete();
+        return total;
+    }
 }

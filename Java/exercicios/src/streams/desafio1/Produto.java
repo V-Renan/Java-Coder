@@ -59,7 +59,6 @@ public class Produto {
         return total;
     }
 
-
     public static Function<Double, String> formatar =
             valor -> String.valueOf(Double.parseDouble(String.format("%.2f", valor)));
 

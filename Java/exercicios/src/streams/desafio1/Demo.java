@@ -3,6 +3,8 @@ package streams.desafio1;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
 
 /**
  * @author Victor$
@@ -26,5 +28,7 @@ public class Demo {
                 .filter(Utilitarios.precoFinal)
                 .map(Utilitarios.promocao)
                 .forEach(System.out::println);
+
+
     }
 }
