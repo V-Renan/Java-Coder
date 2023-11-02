@@ -1,5 +1,7 @@
 package streams;
 
+import java.util.Objects;
+
 /**
  * @author Victor$
  * @date 10/28/2023$
@@ -19,6 +21,19 @@ public class Aluno {
         this.nome = nome;
         this.nota = nota;
         this.bomComportamento = bomComportamento;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aluno aluno = (Aluno) o;
+        return Double.compare(aluno.nota, nota) == 0 && bomComportamento == aluno.bomComportamento && Objects.equals(nome, aluno.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, nota, bomComportamento);
     }
 
     public String toString() {
