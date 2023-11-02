@@ -21,8 +21,7 @@ public class Aluno {
         this.bomComportamento = bomComportamento;
     }
 
-    @Override
-    public int hashCode() {
-        return 1;
+    public String toString() {
+        return "Nome: " + nota + "\nNota: " + nota
     }
 }
