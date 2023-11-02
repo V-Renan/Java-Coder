@@ -20,4 +20,9 @@ public class Aluno {
         this.nota = nota;
         this.bomComportamento = bomComportamento;
     }
+
+    @Override
+    public int hashCode() {
+        return 1;
+    }
 }
