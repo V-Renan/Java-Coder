@@ -22,6 +22,6 @@ public class Aluno {
     }
 
     public String toString() {
-        return "Nome: " + nota + "\nNota: " + nota
+        return "Nome: " + nome + " | Nota: " + nota;
     }
 }
