@@ -11,7 +11,20 @@ import java.util.List;
  */
 public class Cliente {
 
-    String nome;
+    final String nome;
 
-    List<Compra> compras = new ArrayList<>();
+    Cliente(String nome) {
+        this.nome = nome;
+    }
+    final List<Compra> compras = new ArrayList<>();
+
+    double getValorTotal() {
+        double total = 0;
+
+        for (Compra compra : compras) {
+            total += compra.getValorTotal();
+        }
+
+        return total;
+    }
 }

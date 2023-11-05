@@ -6,4 +6,8 @@ package praticando3.desafio;
  * Description:
  */
 public class Demo {
+
+    public static void main(String[] args) {
+
+    }
 }

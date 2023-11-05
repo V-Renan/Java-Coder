@@ -7,12 +7,11 @@ package praticando3.desafio;
  */
 public class Item {
 
-    int quantidade;
+    final Produto produto;
+    final int quantidade;
 
-    Produto produto;
-
-    Item(int quantiade, Produto produto) {
-        this.quantidade = quantiade;
+    Item(Produto produto, int quantidade) {
         this.produto = produto;
+        this.quantidade = quantidade;
     }
 }

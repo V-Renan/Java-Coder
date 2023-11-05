@@ -10,13 +10,25 @@ import java.util.List;
  */
 public class Compra {
 
-    List<Item> itens = new ArrayList<>();
+    final List<Item> itens = new ArrayList<>();
 
-    Compra() {
-
+    void adicionarItem(Produto p, int quantidade) {
+        this.itens.add(new Item(p, quantidade));
     }
-    public static void adcicionarIten(Produto produto) {
-        
+
+    void adicionarItem(String nome, double preco, int quantidade) {
+        var produto = new Produto(nome, preco);
+        this.itens.add(new Item(produto, quantidade));
+    }
+
+    double getValorTotal() {
+        double total = 0;
+
+        for (Item item : itens) {
+            total += item.quantidade * item.produto.preco;
+        }
+
+        return total;
     }
 
 }
