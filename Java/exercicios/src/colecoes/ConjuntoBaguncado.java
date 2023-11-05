@@ -26,7 +26,7 @@ public class ConjuntoBaguncado {
         conjunto.add('x');
         System.out.println("Tamanho: " + conjunto.size());
 
-        System.out.println(conjunto.remove("teste"));
+        System.out.println(conjunto.remove("praticando4"));
         System.out.println(conjunto.remove("Teste"));
         System.out.println(conjunto.remove('x'));
 
