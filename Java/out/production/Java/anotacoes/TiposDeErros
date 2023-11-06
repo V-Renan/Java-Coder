@@ -1,0 +1,26 @@
+# Tipos de Erros
+
+- -> Comp. O compilador não vai executar o processo [java.class].
+
+- -> Exec. Erros de tempo de execucao.
+
+## Throwble [Algo que pode ser lancado]
+
+ * -> Error: Representa algo mais grave. Também possui o OutOfMemoryError que é um tipo de erro muito crítico por falta de memória.
+
+ * -> Exception: Excessao a regra, que é possível recuperar.
+
+
+ ## Pilha de Métodos
+
+ - -> Uma pilha de execução métodos que é chamada em sequência a pelo metodo main de uma classe, como por exemplo, uma classe com método main chama o método 1, o 1 que chama o 2,
+ o 2 que chama o 3, o 3 que chama o 4, o 4 chama o 6, o 6 chama o 5, e retorna a mesma sequência ao contrário encerrando o programa.
+
+
+ ### thread são linhas de execução
+
+ ### try é um bloco que tem código que pode gerar erro e a partir do erro gerado, pode ser tratado com um #catch. Com isso
+ existe a possibilidade de mostrar uma menssagem/ gerar outro erro/ silenciar o erro.
+
+ ### PESQUISAR PARA ENTENDER MELHOR ###
+ * java logger library
