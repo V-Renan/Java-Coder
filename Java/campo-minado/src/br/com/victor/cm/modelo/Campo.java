@@ -1,5 +1,7 @@
 package br.com.victor.cm.modelo;
 
+import br.com.victor.cm.excecao.ExplosaoException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,5 +43,48 @@ public class Campo {
             return true;
         }
         return false;
+    }
+
+    void alternarMarcacao() {
+        if (!aberto) {
+            marcado = !marcado;
+        }
+    }
+
+    boolean abrir() {
+
+        if (!aberto && !marcado) {
+            aberto = true;
+            if (minado) {
+                throw new ExplosaoException();
+            }
+
+            if (vizinhacaSegura()) {
+                vizinhos.forEach(v -> v.abrir());
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    boolean vizinhacaSegura() {
+        return vizinhos.stream().noneMatch(v -> v.minado);
+    }
+
+    void minar() {
+        minado = true;
+    }
+
+    public boolean isMarcado() {
+        return marcado;
+    }
+
+    public boolean isAberto() {
+        return aberto;
+    }
+
+    public boolean isFechado() {
+        return !isAberto();
     }
 }
