@@ -10,13 +10,14 @@ import java.awt.*;
  */
 public class Calculadora extends JFrame {
 
-    int menor;
-
     public Calculadora() {
 
         organizarLayout();
 
         setSize(232,322);
+        /* - Remove a barra de opcoes do topo, no caso de querer criar uma propria barra para setar a cor.
+        setUndecorated(true);
+        */
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
