@@ -1,0 +1,24 @@
+Sistema de duas camadas passaram a ser conhecidos como, SGBD -> Sistemas Gerenciadores de Banco de Dados
+
+- MySQL: Utiliza a linguagem SQL (Linguagem de Consultas Estruturadas).
+- Oracle: 
+
+1 aula -> Modelo entidade e relacionamento
+* Entidade: Seria a nossa tabela, juntamente com os dados.
+
+* Relacionamento: Como por exemplo uma tabela de Produto e outra de Cliente, as duas tabelas precisam ter uma relacao, que nesse caso poderia ser a tabela Pedido, que a tabela Pedido possui um Produto e joga para o Cliente. Ex: O cliente Marcos fez um Pedido de um PS4(Produto).
+
+-------------------------------------------------------
+Primary Key (PK).
+* A chave primaria possui como principal caracteristica o fato de ser unica. Ela tambem n pode ser vazia, outra caracteristica que a PK possui é que ela n muda.
+
+* SURROGATE KEY: É o conceito de uma chave sintetica, artificial.
+* NATURAL KEY: Seria uma chave natural de um pessoa, por exemplo o CPF/RG.
+
+--------------------------------------------------------
+Restricoes em coluna.
+Uma coluna do tipo unica n aceita repeticoes.
+
+--------------------------------------------------------
+FOREIGN KEY (FK).
+* Chave estrangeira, quando uma pk vai para dentro de uma coluna de outra tabela, chamamos de FK
