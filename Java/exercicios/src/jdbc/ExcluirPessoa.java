@@ -19,7 +19,7 @@ public class ExcluirPessoa {
         int codigo = scan.nextInt();
 
         Connection conexao = FabricaConexao.getConexao();
-        String sql = "DELETE FROM pessoas WHERE codigo > ?";
+        String sql = "DELETE FROM pessoas WHERE codigo = ?";
 
         PreparedStatement stmt = conexao.prepareStatement(sql);
         stmt.setInt(1, codigo);
