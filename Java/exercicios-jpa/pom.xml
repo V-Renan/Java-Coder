@@ -21,6 +21,18 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.5.6.Final</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.23</version> <!-- Use a versão mais recente disponível -->
+        </dependency>
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+            <version>1.11.22</version> <!-- Use a versão mais recente disponível -->
+        </dependency>
+
+
     </dependencies>
 
 
