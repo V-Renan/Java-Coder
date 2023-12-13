@@ -8,23 +8,18 @@ import javax.persistence.Persistence;
 
 /**
  * @author Victor$
- * @date 12/12/2023$
+ * @date 13/12/2023$
  * Description:
  */
-public class NovoUsuario {
+public class ObterUsuario {
 
     public static void main(String[] args) {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
         EntityManager em = emf.createEntityManager();
 
-        Usuario novoUsuario = new Usuario("Victor", "victor@lanche.com.br");
-
-        em.getTransaction().begin();
-        em.persist(novoUsuario);
-        em.getTransaction().commit();
-
-        System.out.println("O Id gerado foi: " + novoUsuario.getId());
+        Usuario usuario = em.find(Usuario.class, 8L);
+        System.out.println(usuario.getNome());
 
         em.close();
         emf.close();
