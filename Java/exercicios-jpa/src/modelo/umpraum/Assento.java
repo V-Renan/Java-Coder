@@ -14,7 +14,8 @@ public class Assento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-
+    @OneToOne(mappedBy = "assento")
+    private Cliente cliente;
     public Assento() {
 
     }
@@ -38,5 +39,13 @@ public class Assento {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }
