@@ -10,6 +10,8 @@
         <class>modelo.basico.Produto</class>
         <class>modelo.umpraum.Assento</class>
         <class>modelo.umpraum.Cliente</class>
+        <class>modelo.umpramuitos.Pedido</class>
+        <class>modelo.umpramuitos.ItemPedido</class>
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/curso_java"/>

@@ -1,4 +1,4 @@
-package teste.basico.umpraum;
+package teste.basico;
 
 import infra.DAO;
 import modelo.umpraum.Assento;

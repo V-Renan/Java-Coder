@@ -1,4 +1,4 @@
-package teste.basico;
+package teste.umpraum;
 
 import modelo.basico.Usuario;
 

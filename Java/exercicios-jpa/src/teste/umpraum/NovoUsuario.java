@@ -1,4 +1,4 @@
-package teste.basico;
+package teste.umpraum;
 
 import modelo.basico.Usuario;
 
@@ -8,28 +8,25 @@ import javax.persistence.Persistence;
 
 /**
  * @author Victor$
- * @date 13/12/2023$
+ * @date 12/12/2023$
  * Description:
  */
-public class AlterarUsuario3 {
+public class NovoUsuario {
 
     public static void main(String[] args) {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
         EntityManager em = emf.createEntityManager();
 
+        Usuario novoUsuario = new Usuario("Victor", "victor@lanche.com.br");
+
         em.getTransaction().begin();
-
-        Usuario usuario = em.find(Usuario.class, 8L);
-        em.detach(usuario);
-
-        usuario.setNome("Renan");
-
-        em.merge(usuario);
-
+        em.persist(novoUsuario);
         em.getTransaction().commit();
 
-        emf.close();
+        System.out.println("O Id gerado foi: " + novoUsuario.getId());
+
         em.close();
+        emf.close();
     }
 }

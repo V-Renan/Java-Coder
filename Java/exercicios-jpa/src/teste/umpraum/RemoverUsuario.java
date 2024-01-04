@@ -1,4 +1,4 @@
-package teste.basico;
+package teste.umpraum;
 
 import modelo.basico.Usuario;
 
@@ -11,23 +11,22 @@ import javax.persistence.Persistence;
  * @date 13/12/2023$
  * Description:
  */
-public class AlterarUsuario1 {
+public class RemoverUsuario {
 
     public static void main(String[] args) {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
         EntityManager em = emf.createEntityManager();
 
-        em.getTransaction().begin();
-
         Usuario usuario = em.find(Usuario.class, 8L);
-        usuario.setNome("Renan");
-        usuario.setEmail("renan@lacnhe.com.br");
 
-        em.merge(usuario);
+        if (usuario != null) {
+            em.getTransaction().begin();
+            em.remove(usuario);
+            em.getTransaction().commit();
+        }
 
-        em.getTransaction().commit();
-        em.close();
         emf.close();
+        em.close();
     }
 }

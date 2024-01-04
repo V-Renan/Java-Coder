@@ -1,4 +1,4 @@
-package teste.basico;
+package teste.umpraum;
 
 import infra.DAO;
 import infra.ProdutoDAO;

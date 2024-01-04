@@ -1,4 +1,4 @@
-package teste.basico;
+package teste.umpraum;
 
 import modelo.basico.Usuario;
 
@@ -11,17 +11,23 @@ import javax.persistence.Persistence;
  * @date 13/12/2023$
  * Description:
  */
-public class ObterUsuario {
+public class AlterarUsuario2 {
 
     public static void main(String[] args) {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
         EntityManager em = emf.createEntityManager();
 
-        Usuario usuario = em.find(Usuario.class, 8L);
-        System.out.println(usuario.getNome());
+        em.getTransaction().begin();
 
-        em.close();
+        Usuario usuario = em.find(Usuario.class, 8L);
+        usuario.setNome("Renan");
+
+        //em.merge(usuario);
+
+        em.getTransaction().commit();
+
         emf.close();
+        em.close();
     }
 }
