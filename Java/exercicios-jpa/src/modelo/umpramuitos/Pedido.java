@@ -16,7 +16,7 @@ public class Pedido {
     private Long id;
     @Column(nullable = false)
     private Date data;
-    @OneToMany(mappedBy = "pedido")
+    @OneToMany(mappedBy = "pedido", fetch = FetchType.LAZY) // ESSE É O VALOR DEFAULT DE FECTH (... ToMany -> LAZY)
     private List<ItemPedido> itens;
 
     public Pedido() {

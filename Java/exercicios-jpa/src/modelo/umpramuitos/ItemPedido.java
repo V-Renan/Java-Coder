@@ -17,7 +17,7 @@ public class ItemPedido {
     private Long id;
     @ManyToOne
     private Pedido pedido;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER) // ESSE É O VALOR DEFAULT DE FECTH (... ToMany -> LAZY)
     private Produto produto;
     @Column(nullable = false)
     private int quantidade;
