@@ -28,10 +28,16 @@ public class DAO<E> {
 
     public DAO(Class<E> classe) {
         this.classe = classe;
+        if (emf == null) {
+            throw new IllegalStateException("EnityManagerFactory nao foi inicializado");
+        }
         em = emf.createEntityManager();
     }
 
     public DAO<E> abrirTransacao() {
+        if (em == null) {
+            throw new IllegalStateException("EnityManager nao foi inicializado");
+        }
         em.getTransaction().begin();
         return this;
     }
@@ -77,6 +83,11 @@ public class DAO<E> {
         }
 
         return query.getResultList();
+    }
+
+    public E consultarUM(String nomeConsulta, Object... params) {
+        List<E> lista = consultar(nomeConsulta, params);
+        return lista.isEmpty() ? null : lista.get(0);
     }
 
     public void fechar() {
