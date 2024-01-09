@@ -19,6 +19,10 @@
         <class>modelo.muitospramuitos.Sobrinho</class>
         <class>modelo.muitospramuitos.Filme</class>
         <class>modelo.muitospramuitos.Ator</class>
+        <class>modelo.composisao.Endereco</class>
+        <class>modelo.composisao.Fornecedor</class>
+        <class>modelo.composisao.Funcionario</class>
+
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/curso_java"/>
