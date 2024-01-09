@@ -91,6 +91,8 @@ public class DAO<E> {
     }
 
     public void fechar() {
-        em.close();
+        if (em != null && em.isOpen()) {
+            em.close();
+        }
     }
 }
