@@ -22,6 +22,8 @@
         <class>modelo.composisao.Endereco</class>
         <class>modelo.composisao.Fornecedor</class>
         <class>modelo.composisao.Funcionario</class>
+        <class>modelo.heranca.Aluno</class>
+        <class>modelo.heranca.AlunoBolsista</class>
 
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
