@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79ded15c-8bcd-47d6-a5b6-a33125a9e386" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/victor/app/calculo/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/victor/app/calculo/CalculadoraImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-financeiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-financeiro/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-financeiro/src/br/com/victor/app/financeiro/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-financeiro/src/br/com/victor/app/financeiro/Teste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-financeiro/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-financeiro/src/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-logging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-logging/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/victo/OneDrive/Documentos/Studies/Java-Coder/Java/app-api-publica",
+    "last_opened_file_path": "C:/Users/victo/OneDrive/Documentos/Studies/Java-Coder/Java/banco-relacional",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15234375",
     "project.structure.side.proportion": "0.2"
