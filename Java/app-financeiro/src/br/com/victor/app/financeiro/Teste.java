@@ -1,6 +1,7 @@
 package br.com.victor.app.financeiro;
 
 import br.com.victor.app.calculo.Calculadora;
+import br.com.victor.app.calculo.interno.OperacoesAritimeticas;
 
 /**
  * @author Victor$
@@ -13,5 +14,8 @@ public class Teste {
 
         Calculadora calc = new Calculadora();
         System.out.println(calc.soma(2, 3, 4));
+
+        OperacoesAritimeticas op = new OperacoesAritimeticas();
+        System.out.println(op.soma(4, 5, 6));
     }
 }
