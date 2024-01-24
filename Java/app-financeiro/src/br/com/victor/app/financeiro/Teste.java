@@ -1,9 +1,9 @@
 package br.com.victor.app.financeiro;
 
-import br.com.victor.app.calculo.Calculadora;
-import br.com.victor.app.calculo.interno.OperacoesAritimeticas;
+import br.com.victor.app.Calculadora;
 
 import java.lang.reflect.Field;
+import java.util.ServiceLoader;
 
 /**
  * @author Victor$
@@ -14,15 +14,17 @@ public class Teste {
 
     public static void main(String[] args) {
 
-        Calculadora calc = new Calculadora();
+        Calculadora calc = ServiceLoader.load(Calculadora.class)
+                .findFirst()
+                .get();
         System.out.println(calc.soma(2, 3, 4));
 
-        OperacoesAritimeticas op = new OperacoesAritimeticas();
-        System.out.println(op.soma(4, 5, 6));
+//        OperacoesAritimeticas op = new OperacoesAritimeticas();
+//        System.out.println(op.soma(4, 5, 6));
 
 
         try {
-            Field fieldId = Calculadora.class.getDeclaredFields()[0];
+            Field fieldId = calc.getClass().getDeclaredFields()[0];
             fieldId.setAccessible(true);
             fieldId.set(calc, "def");
             fieldId.setAccessible(false);
