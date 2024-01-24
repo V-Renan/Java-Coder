@@ -10,10 +10,15 @@ import br.com.victor.app.logging.Logger;
  */
 public class Calculadora {
 
+    private String id = "abc";
     private OperacoesAritimeticas opAritimeticas = new OperacoesAritimeticas();
 
     public Double soma(double... nums) {
         Logger.info("Somando...");
         return opAritimeticas.soma(nums);
+    }
+
+    public String getId() {
+        return id;
     }
 }
