@@ -1,0 +1,4 @@
+# A ideia do Generics é atrasar a definição de determinados tipos, deixar para serem resolvidos depois.
+- Caso não seja resolvido, o tipo padrão que é passado é o 'Object'.
+- Pode ser resolvido na instanciação.
+- Pode ser resolvido com herança.
