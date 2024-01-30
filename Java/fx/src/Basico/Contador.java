@@ -76,7 +76,7 @@ public class Contador extends Application {
         boxConteudo.getChildren().add(boxBotoes);
         boxConteudo.getChildren().add(boxBotoes2);
 
-        String caminhoCss = getClass().getResource("/basico/Contador.css")
+        String caminhoCss = getClass().getResource("/Basico/Contador.css")
                 .toExternalForm();
 
         Scene cenaPrincipal = new Scene(boxConteudo, 400, 400);
