@@ -30,8 +30,8 @@ public class AppLayout extends Application {
 //        temp.getChildren().add(new Quadrado());
 //        temp.getChildren().add(new Quadrado());
 //        Scene principal = new Scene(temp, 800, 600);
-
-        Scene principal = new Scene(new TesteAnchorPane(), 800, 600);
+//        Scene principal = new Scene(new TesteAnchorPane(), 800, 600);
+        Scene principal = new Scene(new TesteBorderPane(), 800, 600);
         stage.setScene(principal);
         stage.show();
         stage.setTitle("Gerenciadores de LayOut");
