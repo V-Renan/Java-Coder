@@ -28,7 +28,7 @@ public class Caixa extends HBox {
         setAlignment(Pos.CENTER);
         setMinWidth(larg);
         setMinHeight(alt);
-        BackgroundFill fill = new BackgroundFill(Color.web(cores[i++]), CornerRadii.EMPTY, Insets.EMPTY);
+        BackgroundFill fill = new BackgroundFill(Color.web(cores[i]), CornerRadii.EMPTY, Insets.EMPTY);
         setBackground(new Background(fill));
         i++;
         if (i == 6) {
