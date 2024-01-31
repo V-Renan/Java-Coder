@@ -20,11 +20,11 @@ public class Quadrado extends Rectangle {
             "#fb750e", "6657a8", "f9060e"
     };
     public Quadrado() {
-        this(100, 100);
+        this(100);
     }
-    public Quadrado(int larg, int alt) {
-        setWidth(larg);
-        setHeight(alt);
+    public Quadrado(int tamanho) {
+        setWidth(tamanho);
+        setHeight(tamanho);
         setFill(Color.web(cores[i]));
         i++;
         if (i == 6) {
