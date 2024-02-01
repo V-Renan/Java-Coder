@@ -1,8 +1,10 @@
 package fxml;
 
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import org.controlsfx.control.Notifications;
 
 /**
  * @author Victor$
@@ -15,7 +17,25 @@ public class LoginControlador {
     @FXML
     private PasswordField campoSenha;
     public void entrar() {
-        System.out.println(campoEmail.getText());
-        System.out.println(campoSenha.getText());
+        sucesso();
+    }
+    private boolean emailIsValido() {
+        return campoEmail.getText().equals("teste@teste.com");
+    }
+    private boolean senhaIsValido() {
+        return campoSenha.getText().equals("teste123");
+    }
+    private void sucesso() {
+        if (emailIsValido() && senhaIsValido()) {
+            Notifications.create().title("login FXML")
+                    .position(Pos.CENTER)
+                    .text("Login efetuado com sucesso!")
+                    .showInformation();
+        } else {
+            Notifications.create().title("login FXML")
+                    .position(Pos.CENTER)
+                    .text("Usuario e Senha invalidos!")
+                    .showError();
+        }
     }
 }
