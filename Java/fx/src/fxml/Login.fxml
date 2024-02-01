@@ -43,9 +43,19 @@
             styleClass="login-form-botao"
             GridPane.columnIndex="0" GridPane.rowIndex="3"
             onAction="#entrar"
-            GridPane.columnSpan="2" GridPane.halignment="CENTER">
+            GridPane.columnSpan="2" GridPane.halignment="LEFT">
             <GridPane.margin>
                 <Insets top="20" bottom="20" />
             </GridPane.margin>
+    </Button>
+
+    <Button text="Sair"
+    styleClass="login-form-botao"
+    onAction="#sair"
+    GridPane.columnIndex="1" GridPane.rowIndex="3"
+    GridPane.columnSpan="1" GridPane.halignment="RIGHT">
+        <GridPane.margin>
+            <Insets top="20" bottom="20" />
+        </GridPane.margin>
     </Button>
 </GridPane>

@@ -1,9 +1,12 @@
 package fxml;
 
+import javafx.animation.PauseTransition;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
 
 /**
@@ -37,5 +40,21 @@ public class LoginControlador {
                     .text("Usuario e Senha invalidos!")
                     .showError();
         }
+    }
+    @FXML
+    private void sair() {
+        Notifications.create()
+                .title("Sair")
+                .position(Pos.CENTER)
+                .text("Encerrando...")
+                .showInformation();
+
+        PauseTransition pause = new PauseTransition(Duration.seconds(2));
+        pause.setOnFinished(e -> encerrar());
+        pause.play();
+    }
+
+    private void encerrar() {
+        System.exit(0);
     }
 }
