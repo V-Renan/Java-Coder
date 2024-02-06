@@ -1,6 +1,6 @@
 package br.com.victor.exerciciossb.controllers;
 
-import br.com.victor.exerciciossb.models.Cliente;
+import br.com.victor.exerciciossb.model.entities.Cliente;
 import org.springframework.web.bind.annotation.*;
 
 /**

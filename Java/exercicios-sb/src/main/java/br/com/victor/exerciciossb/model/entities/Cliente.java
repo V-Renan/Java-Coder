@@ -1,4 +1,4 @@
-package br.com.victor.exerciciossb.models;
+package br.com.victor.exerciciossb.model.entities;
 
 /**
  * @author Victor$
